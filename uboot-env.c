@@ -473,14 +473,14 @@ int	process_args(int argc, char * argv[], int opt)
 
 		l = 0;
 	}
-	else if (l == length)
+/*	else if (l == length)
 	{
 		if (chkcrc(data, length))
 		{
 			errmsg("CRC check failed\n");
 			l = 0;
 		}
-	}
+	}*/
 
 	if (((l == 0) && (reset == -1)) || ((l != 0) && (reset == 1)))
 	{
